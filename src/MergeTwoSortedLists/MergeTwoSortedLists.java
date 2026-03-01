@@ -8,6 +8,9 @@ package MergeTwoSortedLists;
  **/
 public class MergeTwoSortedLists {
 
+    // ==============================
+    // SOLUTION #1
+    // ==============================
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
         boolean isHeadNode = true;
@@ -46,6 +49,20 @@ public class MergeTwoSortedLists {
         return headNode;
     }
 
+    public static ListNode appendNewNode(ListNode currentNode, int val) {
+
+        ListNode newNode = new ListNode(val);
+
+        if (currentNode == null) return newNode;
+
+        currentNode.next = newNode;
+
+        return newNode;
+    }
+
+    // ==============================
+    // SOLUTION #2
+    // ==============================
     public static ListNode mergeTwoLists_second(ListNode list1, ListNode list2) {
 
         ListNode dummy = new ListNode(-1);
@@ -72,17 +89,6 @@ public class MergeTwoSortedLists {
         current.next = (list1 != null) ? list1 : list2;
 
         return dummy.next;
-    }
-
-    public static ListNode appendNewNode(ListNode currentNode, int val) {
-
-        ListNode newNode = new ListNode(val);
-
-        if (currentNode == null) return newNode;
-
-        currentNode.next = newNode;
-
-        return newNode;
     }
 
 

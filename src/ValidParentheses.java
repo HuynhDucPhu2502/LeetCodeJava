@@ -8,55 +8,6 @@ import java.util.Stack;
  **/
 public class ValidParentheses {
 
-//    public static boolean isValid(String s) {
-//
-//        boolean validParentheses = true;
-//        boolean validCurlyBraces = true;
-//        boolean validSquareBrackets = true;
-//
-//        for (int i = 0; i < s.length(); i++) {
-//
-//            switch (s.charAt(i)) {
-//
-//                case '(' -> {
-//                    validParentheses = false;
-//                }
-//
-//                case ')' -> {
-//                    if (checkIsInsideOtherBrackets(i, '(', s)) return false;
-//                    else if (!validParentheses) validParentheses = true;
-//                    else return false;
-//                }
-//
-//                case '{' -> {
-//                    validCurlyBraces = false;
-//                }
-//
-//                case '}' -> {
-//                    if (checkIsInsideOtherBrackets(i, '{', s)) return false;
-//                    else if (!validCurlyBraces) validCurlyBraces = true;
-//                    else return false;
-//                }
-//
-//                case '[' -> {
-//                    validSquareBrackets = false;
-//                }
-//
-//                case ']' -> {
-//                    if (checkIsInsideOtherBrackets(i, '[', s)) return false;
-//                    else if (!validSquareBrackets) validSquareBrackets = true;
-//                    else return false;
-//                }
-//
-//
-//            }
-//
-//
-//        }
-//
-//        return validParentheses && validSquareBrackets && validCurlyBraces;
-//    }
-
     public static boolean isValid(String s) {
 
         Stack<Character> stack = new Stack<>();

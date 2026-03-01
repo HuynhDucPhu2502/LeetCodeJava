@@ -6,6 +6,9 @@
  **/
 public class PalindromeNumber {
 
+    // ==============================
+    // SOLUTION #1
+    // ==============================
     public static boolean solve_PalindromeNumber_first(int x) {
         String xStr = String.valueOf(x);
 
@@ -25,6 +28,9 @@ public class PalindromeNumber {
         return true;
     }
 
+    // ==============================
+    // SOLUTION #2
+    // ==============================
     public static boolean solve_PalindromeNumber_second(int x) {
         if (x < 0 || (x % 10 == 0 && x != 0)) return false;
 
