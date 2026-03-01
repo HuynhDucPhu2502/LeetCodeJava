@@ -1,6 +1,8 @@
 /**
  * Admin 3/1/2026
- *
+ * Problem: Longest Common Prefix
+ * Difficulty: Easy
+ * Link: <a href="https://leetcode.com/problems/longest-common-prefix/">Click Me</a>
  **/
 public class LongestCommonPrefix {
 
