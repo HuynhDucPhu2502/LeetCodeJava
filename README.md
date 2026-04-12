@@ -1,4 +1,4 @@
-# LeetCodeJava
+# Java-GoPro
 
 This repository is used to practice `Java Core`.
 
