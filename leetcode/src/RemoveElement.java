@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * Admin 3/3/2026
  * Problem: Remove Element
